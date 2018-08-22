@@ -25,5 +25,6 @@ f.write("\\end{document}")
 f.close()
 
 os.system("pdflatex output.tex")
+os.remove("output.tex")
 os.remove("output.aux")
 os.remove("output.log")
